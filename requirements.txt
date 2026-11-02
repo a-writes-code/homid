@@ -1,0 +1,13 @@
+# Tested with Python 3.11 on CPU.
+# Direct dependencies are pinned to the release-validation environment.
+numpy==1.26.4
+scipy==1.17.1
+scikit-learn==1.9.1
+scikit-dimension==0.3.4
+numba==0.68.1
+pandas==2.3.3
+h5py==3.16.0
+
+# Main-paper plot notebooks.
+matplotlib==3.11.2
+notebook==7.6.4

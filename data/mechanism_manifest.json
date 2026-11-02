@@ -1,0 +1,595 @@
+{
+  "schema_version": 1,
+  "archive": "mechanism_data.npz",
+  "compression": "NumPy NPZ / ZIP DEFLATE, lossless; original numeric precision retained",
+  "source_root": "../local_ideb (relative to the repository root; not needed for plotting)",
+  "source_notebook": "iclr_review/vis.ipynb",
+  "figure_mapping": {
+    "5": "mle_squeeze_noise.pdf",
+    "6": "lpca_interp_mt.pdf",
+    "7": "abid_interp.pdf"
+  },
+  "figure_6_selection": {
+    "sphere_clean": {
+      "original_k_grid_length": 59,
+      "selected_grid_indices": [
+        0,
+        8,
+        17,
+        25,
+        33,
+        41,
+        50,
+        58
+      ],
+      "k_values": [
+        5,
+        15,
+        50,
+        141,
+        396,
+        1111,
+        3536,
+        9900
+      ],
+      "anchors": 50,
+      "N": 10000,
+      "di": 25,
+      "da": 51
+    },
+    "sphere_distorted": {
+      "original_k_grid_length": 59,
+      "selected_grid_indices": [
+        0,
+        8,
+        17,
+        25,
+        33,
+        41,
+        50,
+        58
+      ],
+      "k_values": [
+        5,
+        15,
+        50,
+        141,
+        396,
+        1111,
+        3536,
+        9900
+      ],
+      "anchors": 50,
+      "N": 10000,
+      "di": 25,
+      "da": 51
+    },
+    "grassmann": {
+      "original_k_grid_length": 59,
+      "selected_grid_indices": [
+        0,
+        8,
+        17,
+        25,
+        33,
+        41,
+        50,
+        58
+      ],
+      "k_values": [
+        5,
+        15,
+        50,
+        141,
+        396,
+        1111,
+        3536,
+        9900
+      ],
+      "anchors": 50,
+      "N": 10000,
+      "di": 24,
+      "da": 100
+    }
+  },
+  "figure_7_derivation": {
+    "status": "Regenerated from original source inputs, not a preexisting numerical cache",
+    "sphere_di": 12,
+    "sphere_da": 20,
+    "N": 2000,
+    "k_including_self": 100,
+    "seed": 42,
+    "n_jobs": 10,
+    "eps_values": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "histogram_edges": "np.linspace(-1, 1, num=100)",
+    "histogram_normalization": "Counts divided by the total number of off-diagonal cosine values; 99 bins.",
+    "sphere_generation": "Original hSphere_isometry (QR random isometry and normalized Gaussian samples). Radial distortion: eps*U(0,1) + 1 - eps/2, reseeded with 42 for each epsilon.",
+    "homid_selection": "First 2000 saved samples per manifold, flattened before kNN.",
+    "reference_curve": "Original cell 52 beta-function expression, normalized by its discrete sum. Kept unchanged."
+  },
+  "environment": {
+    "python": "3.11.7",
+    "numpy": "1.26.0",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.9.0",
+    "h5py": "3.16.0"
+  },
+  "arrays": {
+    "mnist_classes": {
+      "shape": [
+        10
+      ],
+      "dtype": "int64"
+    },
+    "mnist_eps": {
+      "shape": [
+        9
+      ],
+      "dtype": "float64"
+    },
+    "mnist_sigma2": {
+      "shape": [
+        12
+      ],
+      "dtype": "float64"
+    },
+    "mnist_squeeze_mean": {
+      "shape": [
+        10,
+        9
+      ],
+      "dtype": "float64"
+    },
+    "mnist_noise_mean": {
+      "shape": [
+        10,
+        3,
+        12
+      ],
+      "dtype": "float64"
+    },
+    "mnist_squeeze_stderr": {
+      "shape": [
+        10,
+        9
+      ],
+      "dtype": "float64"
+    },
+    "mnist_noise_stderr": {
+      "shape": [
+        10,
+        3,
+        12
+      ],
+      "dtype": "float64"
+    },
+    "sphere_clean_k": {
+      "shape": [
+        8
+      ],
+      "dtype": "int64"
+    },
+    "sphere_clean_anchors": {
+      "shape": [
+        50
+      ],
+      "dtype": "int64"
+    },
+    "sphere_clean_evals_0": {
+      "shape": [
+        50,
+        5
+      ],
+      "dtype": "float64"
+    },
+    "sphere_clean_evals_1": {
+      "shape": [
+        50,
+        15
+      ],
+      "dtype": "float64"
+    },
+    "sphere_clean_evals_2": {
+      "shape": [
+        50,
+        50
+      ],
+      "dtype": "float64"
+    },
+    "sphere_clean_evals_3": {
+      "shape": [
+        50,
+        51
+      ],
+      "dtype": "float64"
+    },
+    "sphere_clean_evals_4": {
+      "shape": [
+        50,
+        51
+      ],
+      "dtype": "float64"
+    },
+    "sphere_clean_evals_5": {
+      "shape": [
+        50,
+        51
+      ],
+      "dtype": "float64"
+    },
+    "sphere_clean_evals_6": {
+      "shape": [
+        50,
+        51
+      ],
+      "dtype": "float64"
+    },
+    "sphere_clean_evals_7": {
+      "shape": [
+        50,
+        51
+      ],
+      "dtype": "float64"
+    },
+    "sphere_distorted_k": {
+      "shape": [
+        8
+      ],
+      "dtype": "int64"
+    },
+    "sphere_distorted_anchors": {
+      "shape": [
+        50
+      ],
+      "dtype": "int64"
+    },
+    "sphere_distorted_evals_0": {
+      "shape": [
+        50,
+        5
+      ],
+      "dtype": "float64"
+    },
+    "sphere_distorted_evals_1": {
+      "shape": [
+        50,
+        15
+      ],
+      "dtype": "float64"
+    },
+    "sphere_distorted_evals_2": {
+      "shape": [
+        50,
+        50
+      ],
+      "dtype": "float64"
+    },
+    "sphere_distorted_evals_3": {
+      "shape": [
+        50,
+        51
+      ],
+      "dtype": "float64"
+    },
+    "sphere_distorted_evals_4": {
+      "shape": [
+        50,
+        51
+      ],
+      "dtype": "float64"
+    },
+    "sphere_distorted_evals_5": {
+      "shape": [
+        50,
+        51
+      ],
+      "dtype": "float64"
+    },
+    "sphere_distorted_evals_6": {
+      "shape": [
+        50,
+        51
+      ],
+      "dtype": "float64"
+    },
+    "sphere_distorted_evals_7": {
+      "shape": [
+        50,
+        51
+      ],
+      "dtype": "float64"
+    },
+    "grassmann_k": {
+      "shape": [
+        8
+      ],
+      "dtype": "int64"
+    },
+    "grassmann_anchors": {
+      "shape": [
+        50
+      ],
+      "dtype": "int64"
+    },
+    "grassmann_evals_0": {
+      "shape": [
+        50,
+        5
+      ],
+      "dtype": "float64"
+    },
+    "grassmann_evals_1": {
+      "shape": [
+        50,
+        15
+      ],
+      "dtype": "float64"
+    },
+    "grassmann_evals_2": {
+      "shape": [
+        50,
+        50
+      ],
+      "dtype": "float64"
+    },
+    "grassmann_evals_3": {
+      "shape": [
+        50,
+        100
+      ],
+      "dtype": "float64"
+    },
+    "grassmann_evals_4": {
+      "shape": [
+        50,
+        100
+      ],
+      "dtype": "float64"
+    },
+    "grassmann_evals_5": {
+      "shape": [
+        50,
+        100
+      ],
+      "dtype": "float64"
+    },
+    "grassmann_evals_6": {
+      "shape": [
+        50,
+        100
+      ],
+      "dtype": "float64"
+    },
+    "grassmann_evals_7": {
+      "shape": [
+        50,
+        100
+      ],
+      "dtype": "float64"
+    },
+    "abid_eps": {
+      "shape": [
+        5
+      ],
+      "dtype": "float64"
+    },
+    "abid_sphere_hist": {
+      "shape": [
+        5,
+        99
+      ],
+      "dtype": "float64"
+    },
+    "abid_sphere_skew": {
+      "shape": [
+        5
+      ],
+      "dtype": "float64"
+    },
+    "abid_bins": {
+      "shape": [
+        99
+      ],
+      "dtype": "float64"
+    },
+    "gman_proj_abid_hist": {
+      "shape": [
+        99
+      ],
+      "dtype": "float64"
+    },
+    "gman_proj_abid_skew": {
+      "shape": [],
+      "dtype": "float64"
+    },
+    "gman_vec_abid_hist": {
+      "shape": [
+        99
+      ],
+      "dtype": "float64"
+    },
+    "gman_vec_abid_skew": {
+      "shape": [],
+      "dtype": "float64"
+    },
+    "st_proj_abid_hist": {
+      "shape": [
+        99
+      ],
+      "dtype": "float64"
+    },
+    "st_proj_abid_skew": {
+      "shape": [],
+      "dtype": "float64"
+    },
+    "st_vec1_abid_hist": {
+      "shape": [
+        99
+      ],
+      "dtype": "float64"
+    },
+    "st_vec1_abid_skew": {
+      "shape": [],
+      "dtype": "float64"
+    },
+    "flag_vec_abid_hist": {
+      "shape": [
+        99
+      ],
+      "dtype": "float64"
+    },
+    "flag_vec_abid_skew": {
+      "shape": [],
+      "dtype": "float64"
+    }
+  },
+  "archive_size_bytes": 408718,
+  "archive_sha256": "cf76bb9f8fbc2d17a3f1f4c981828124049604ab2474a407e89b6d9f19e249b9",
+  "sources": [
+    {
+      "path": "iclr_review/data/squeeze_mnist_mle.pkl",
+      "size_bytes": 3609225,
+      "mtime_utc": "2025-11-14T20:50:01.754979+00:00",
+      "sha256": "ff9971ea7a7eebcd3da8a4080c98833fb2086d86cf787e1163a5604417cbcfc4",
+      "fields_used": [
+        "classes",
+        "eps_list",
+        "[class][epsilon].mean",
+        "[class][epsilon].stderr"
+      ],
+      "figure": 5,
+      "action": "Exact selection; pointwise lides discarded. Stored summary values are unchanged."
+    },
+    {
+      "path": "iclr_review/data/noise_mnist_mle.pkl",
+      "size_bytes": 14438876,
+      "mtime_utc": "2025-11-14T20:51:15.878556+00:00",
+      "sha256": "ba544ef92c2daf7088ad221f8d8d279de4f774fa1aa6697fc9ed9d649ac1860a",
+      "fields_used": [
+        "classes",
+        "sigma2_list",
+        "[class][covariance][variance].mean",
+        "[class][covariance][variance].stderr"
+      ],
+      "figure": 5,
+      "action": "Exact selection; pointwise lides discarded. Covariance order: iso, aniso, corr."
+    },
+    {
+      "path": "iclr_review/data/sphere_25_51_0.0__spectral_gap.pkl",
+      "size_bytes": 1185174,
+      "mtime_utc": "2025-11-17T21:02:55.669373+00:00",
+      "sha256": "687a5de9285edb9ebf2d9ec38dcb9e1875e22d720d429a5420719755c5c337bc",
+      "fields_used": [
+        "k_values",
+        "anchor_idx",
+        "evals[anchor][k]"
+      ],
+      "figure": 6,
+      "action": "Lossless selection of the eight k values used by vis.ipynb cell 30. Every plotted anchor and eigenvalue is retained."
+    },
+    {
+      "path": "iclr_review/data/sphere_25_51_1.998__spectral_gap.pkl",
+      "size_bytes": 1185174,
+      "mtime_utc": "2025-11-17T21:03:23.569707+00:00",
+      "sha256": "2e8e23dc679d4efb636b42d1a1fe1b886dd57c9b49cf3113846db3d858732ae4",
+      "fields_used": [
+        "k_values",
+        "anchor_idx",
+        "evals[anchor][k]"
+      ],
+      "figure": 6,
+      "action": "Lossless selection of the eight k values used by vis.ipynb cell 30. Every plotted anchor and eigenvalue is retained."
+    },
+    {
+      "path": "iclr_review/data/gr_proj_10_6_spectral_gap.pkl",
+      "size_bytes": 1939261,
+      "mtime_utc": "2025-11-17T01:15:06.284084+00:00",
+      "sha256": "0d8d706d7f10b49927a99c6d3cc062cfc17a5b20382db12a839e1651d5230f1d",
+      "fields_used": [
+        "k_values",
+        "anchor_idx",
+        "evals[anchor][k]"
+      ],
+      "figure": 6,
+      "action": "Lossless selection of the eight k values used by vis.ipynb cell 30. Every plotted anchor and eigenvalue is retained."
+    },
+    {
+      "path": "iclr_review/data/samples/_gman_proj_p_(10, 6, 42).h5",
+      "size_bytes": 15782762,
+      "mtime_utc": "2025-11-15T01:51:46.702087+00:00",
+      "sha256": "f4e7c9493cdc0a0c731b5f4e0942bfa32b5510a6a22bf68a28d59900d7b34507",
+      "fields_used": [
+        "samples[:2000]"
+      ],
+      "figure": 7,
+      "action": "Histogram and skewness regenerated using the original vis.ipynb functions (cells 39, 46, 49). Full pairwise cosine arrays are discarded after aggregation."
+    },
+    {
+      "path": "iclr_review/data/samples/_gman_vec_p_(10, 5, 42).h5",
+      "size_bytes": 20251188,
+      "mtime_utc": "2025-11-15T01:52:18.506397+00:00",
+      "sha256": "51cf50e2ea82a9d8ee33f047d446fcc51442f6881d1eefda6f3ac989660101c7",
+      "fields_used": [
+        "samples[:2000]"
+      ],
+      "figure": 7,
+      "action": "Histogram and skewness regenerated using the original vis.ipynb functions (cells 39, 46, 49). Full pairwise cosine arrays are discarded after aggregation."
+    },
+    {
+      "path": "iclr_review/data/samples/_steifel_proj_p_(10, 6, 42).h5",
+      "size_bytes": 4820304,
+      "mtime_utc": "2025-11-15T01:52:54.216862+00:00",
+      "sha256": "7421f9f5307c242cdd5e1ffa27b2f0522e588f41e6263ef6e6242d8c90cbccf4",
+      "fields_used": [
+        "samples[:2000]"
+      ],
+      "figure": 7,
+      "action": "Histogram and skewness regenerated using the original vis.ipynb functions (cells 39, 46, 49). Full pairwise cosine arrays are discarded after aggregation."
+    },
+    {
+      "path": "iclr_review/data/samples/_steifel_vec1_p_(9, 5, 42).h5",
+      "size_bytes": 12122261,
+      "mtime_utc": "2025-11-15T01:53:14.792027+00:00",
+      "sha256": "4a20f849ab10365b9dd96c48652ce9a695e59bed9c30059f463bf9b3b0c76f20",
+      "fields_used": [
+        "samples[:2000]"
+      ],
+      "figure": 7,
+      "action": "Histogram and skewness regenerated using the original vis.ipynb functions (cells 39, 46, 49). Full pairwise cosine arrays are discarded after aggregation."
+    },
+    {
+      "path": "iclr_review/data/samples/_flag_vec_p_(6, 3, 2, 42).h5",
+      "size_bytes": 24104439,
+      "mtime_utc": "2025-11-15T01:58:57.767031+00:00",
+      "sha256": "62eec610d0a86a1c3c836d9b7533df251357f8699db9a1dbc3371cea3d34fc3e",
+      "fields_used": [
+        "samples[:2000]"
+      ],
+      "figure": 7,
+      "action": "Histogram and skewness regenerated using the original vis.ipynb functions (cells 39, 46, 49). Full pairwise cosine arrays are discarded after aggregation."
+    },
+    {
+      "path": "iclr_review/vis.ipynb",
+      "size_bytes": 22265194,
+      "mtime_utc": "2026-08-07T21:48:56.931622+00:00",
+      "sha256": "c677cee417f43ff262e0a83f70048e3cf1a6d6f916f78e18f27f4e2613c76b02",
+      "fields_used": [
+        "cells 5, 9 (Figure 5)",
+        "cells 20, 30 (Figure 6)",
+        "cells 36, 39, 43, 44, 46\u201350, 52 (Figure 7)"
+      ],
+      "figure": [
+        5,
+        6,
+        7
+      ],
+      "action": "Original plotting and histogram functions copied. Only file loading, output paths and notebook organization are adapted. Pauli is excluded because the Figure 7 plotting cell explicitly skips it."
+    }
+  ]
+}

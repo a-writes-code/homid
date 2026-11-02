@@ -1,0 +1,37 @@
+# Public release allowlist. All other local files stay private and untracked.
+*
+
+!/.gitignore
+!/LICENSE
+!/README.md
+!/requirements.txt
+!/main.py
+
+# Original scientific code.
+!/src/
+!/src/manifolds.py
+!/src/data_utils.py
+!/src/data_knn_gen.py
+!/src/knn.py
+!/src/ide.py
+!/src/ide_main.py
+
+# Compact numerical inputs and notebooks for the main paper figures.
+!/data/
+!/data/README.md
+!/data/benchmark_data.npz
+!/data/benchmark_manifest.json
+!/data/mechanism_data.npz
+!/data/mechanism_manifest.json
+
+# Plotting notebooks and the six released paper figures.
+!/plots/
+!/plots/README.md
+!/plots/benchmark_plots.ipynb
+!/plots/mechanism_plots.ipynb
+!/plots/new_compare_rel_sphere_only.pdf
+!/plots/score_vs_epsilon_sub.pdf
+!/plots/noise_tre_scaling_rel_sub.pdf
+!/plots/mle_squeeze_noise.pdf
+!/plots/lpca_interp_mt.pdf
+!/plots/abid_interp.pdf
