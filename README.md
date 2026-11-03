@@ -433,6 +433,25 @@ DANCo did not finish within the 35-second smoke-test limit. Its completion is no
 
 The CLI exposes the experiments implemented in the original source. It does not provide a launcher for every paper experiment, including the real-data and mechanistic analyses. The numerical bundles and notebooks provide the main-figure reproduction path.
 
+## Citation 
+
+Please cite the relevant arxiv paper if you use this benchmark.
+```
+Das, A., Iosue, J. T., & Albert, V. V. (2026). HomID: Benchmarking intrinsic dimension estimators on homogenous manifolds with anisotropic embeddings. arXiv. https://arxiv.org/abs/2510.01335
+```
+
+The corresponding bibtex entry is
+```
+@misc{das2026homidbenchmarkingintrinsic,
+      title={HomID : Benchmarking Intrinsic Dimension Estimators on Homogenous Manifolds with Anisotropic Embeddings}, 
+      author={Aritra Das and Joseph T. Iosue and Victor V. Albert},
+      year={2026},
+      eprint={2510.01335},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2510.01335}, 
+}
+```
 ## AI use declaration
 
 The original scientific code was written by the author without the use of AI. AI assistance was used only to prepare this repository for release, including its organization, README, writeup, technical descriptions, data packaging, plot-reproduction notebooks, and the `main.py` command-line wrapper. The original manifold-generation, data-storage, nearest-neighbor, and ID-estimation source files were moved into `src/` without changes to their contents.
