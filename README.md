@@ -4,7 +4,9 @@ HomID provides synthetic manifolds for testing intrinsic dimension estimators. I
 
 This repository contains the original manifold generators, data storage utilities, nearest-neighbor utilities, and ID estimation routines in `src/`. The `data/` folder contains compact numerical inputs for the main paper plots. The `plots/` folder contains six released PDF snapshots and the plotting and compression notebooks. Use `main.py` to generate samples, run ID estimation, or reproduce the plots.
 
-**Paper:** Aritra Das, Joseph T. Iosue, and Victor V. Albert, [*HomID: Benchmarking Intrinsic Dimension Estimators on Homogeneous Manifolds with Anisotropic Embeddings*, arXiv:2510.01335v2](https://arxiv.org/abs/2510.01335v2). [Read version 2 in HTML](https://arxiv.org/html/2510.01335v2).
+**Paper:** Aritra Das, Joseph T. Iosue, and Victor V. Albert, [*HomID: Benchmarking Intrinsic Dimension Estimators on Homogeneous Manifolds with Anisotropic Embeddings*, arXiv:2510.01335v2](https://arxiv.org/abs/2510.01335v2). [Read on HuggingFace](https://huggingface.co/papers/2510.01335)
+
+Representative examples on [HuggingFace](https://huggingface.co/datasets/hugs-from-a-25/homid)
 
 ## Contents
 
